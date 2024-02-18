@@ -7,13 +7,11 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 
 
-
-
-import React from 'react'
-
 const Routes: React.FC = () => {
-  return (
-    <BrowserRouter>
+
+    
+    return (
+    <BrowserRouter basename="main-nav">
     <AppRoutes>
               <Route path="/" element={<Home />}/>
               <Route path="/services" element={<Services />} />
@@ -21,7 +19,6 @@ const Routes: React.FC = () => {
               <Route path="/download" element={<Download />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-    
     </AppRoutes>
     </BrowserRouter>
   )
